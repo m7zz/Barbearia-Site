@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbearia | Corte, Estilo e Identidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">nome</div>
+  <div class="loader-bar"></div>
+  <div class="loader-text">Barbearia Premium · Desde 2018</div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">BARBEARIA <span>NOME</span></a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#avaliacoes">Avaliações</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#localizacao">Contato</a></li>
+    <li><a href="https://wa.me/5531999999999" class="nav-cta">Agendar</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#sobre" class="mobile-link">Sobre</a>
+  <a href="#servicos" class="mobile-link">Serviços</a>
+  <a href="#avaliacoes" class="mobile-link">Avaliações</a>
+  <a href="#galeria" class="mobile-link">Galeria</a>
+  <a href="#localizacao" class="mobile-link">Contato</a>
+  <a href="https://wa.me/5531999999999" class="mobile-link" style="color: #25D366">Agendar →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-lines"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Barbearia Premium · BH</div>
+    <h1 class="hero-title">
+      Seu corte,<br>
+      <span class="line2">sua identidade.</span>
+    </h1>
+    <p class="hero-subtitle">Precisão, estilo e atendimento de alto nível.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/5531999999999" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Agendar no WhatsApp
+      </a>
+      <a href="#servicos" class="btn-secondary">Ver serviços →</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat reveal"><div class="stat-num">5.0</div><div class="stat-label">Nota Google</div></div>
+    <div class="stat reveal reveal-delay-1"><div class="stat-num">6+</div><div class="stat-label">Anos de experiência</div></div>
+    <div class="stat reveal reveal-delay-2"><div class="stat-num">∞</div><div class="stat-label">Satisfação garantida</div></div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section-pad">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <div class="about-img" style="background: url('https://thumbs.dreamstime.com/b/haidresser-e-barbeiro-de-visita-do-cliente-homem-moderno-na-barbearia-tomando-o-selfie-131589410.jpg') center/cover;"></div>
+      <div class="about-img-frame"></div>
+      <div class="about-tag">
+        <div class="about-tag-num">6+</div>
+        <div class="about-tag-label">Anos de expertise</div>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-label reveal">Quem somos</div>
+      <h2 class="about-name reveal reveal-delay-1">
+        Fulano <em>de Tal</em><br>O artista atrás da tesoura.
+      </h2>
+      <p class="about-desc reveal reveal-delay-2">
+        Com mais de X anos dedicados à arte da barbearia, Fulano transformou técnica em paixão e paixão em resultados. Cada corte é executado com precisão cirúrgica, atenção aos detalhes e um olhar artístico único que vai além do que você imagina.
+      </p>
+      <p class="about-desc reveal reveal-delay-3">
+        Na Barbearia X, você não apenas cuida do visual — você vive uma experiência completa de bem-estar masculino. Ambiente premium, atendimento personalizado e aquela conversa boa que só um barbeiro de verdade sabe ter.
+      </p>
+      <div class="about-pillars">
+        <div class="pillar reveal reveal-delay-1">
+          <div class="pillar-icon">✦</div>
+          <div class="pillar-title">Precisão</div>
+        </div>
+        <div class="pillar reveal reveal-delay-2">
+          <div class="pillar-icon">◈</div>
+          <div class="pillar-title">Estilo</div>
+        </div>
+        <div class="pillar reveal reveal-delay-3">
+          <div class="pillar-icon">❋</div>
+          <div class="pillar-title">Conforto</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="section-pad">
+  <div class="section-label reveal">O que oferecemos</div>
+  <h2 class="section-title reveal reveal-delay-1">Serviços que <em>definem</em> seu estilo.</h2>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <div class="service-icon">✂</div>
+      <div class="service-name">Corte Masculino</div>
+      <p class="service-desc">Do tradicional ao contemporâneo, cada corte é adaptado ao seu rosto e personalidade.</p>
+      <div class="service-price">R$ 10,00</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-num">02</div>
+      <div class="service-icon">🪒</div>
+      <div class="service-name">Barba</div>
+      <p class="service-desc">Navalha, toalha quente e técnica apurada para uma barba impecável e bem definida.</p>
+      <div class="service-price">R$ 10,00</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-num">03</div>
+      <div class="service-icon">⚡</div>
+      <div class="service-name">Corte + Barba</div>
+      <p class="service-desc">O combo perfeito para quem quer sair transformado do início ao fim.</p>
+      <div class="service-price">R$ 10,00</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <div class="service-num">04</div>
+      <div class="service-icon">◈</div>
+      <div class="service-name">Degradê</div>
+      <p class="service-desc">Transição perfeita, fade limpo e acabamento que chama atenção onde você passar.</p>
+      <div class="service-price">R$ 10,00</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <div class="service-num">05</div>
+      <div class="service-icon">◇</div>
+      <div class="service-name">Pezinho</div>
+      <p class="service-desc">Acabamento.</p>
+      <div class="service-price">R$ 10,00</div>
+      <div class="service-arrow">↗</div>
+    </div>
+    <div class="service-card reveal reveal-delay-3">
+      <div class="service-num">06</div>
+      <div class="service-icon">✦</div>
+      <div class="service-name">Acabamento Navalha</div>
+      <p class="service-desc">O toque final que separa um bom corte de um corte perfeito. Precisão absoluta.</p>
+      <div class="service-price">R$ 10,00</div>
+      <div class="service-arrow">↗</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- AVALIAÇÕES -->
+<section id="avaliacoes" class="section-pad">
+  <div class="reviews-header">
+    <div class="section-label reveal" style="justify-content: center; text-align:center">Prova social</div>
+    <h2 class="section-title reveal reveal-delay-1">O que <em>dizem</em> nossos clientes.</h2>
+    <div class="rating-display reveal reveal-delay-2">
+      <div class="rating-big">5.0</div>
+      <div class="rating-stars-col">
+        <div class="stars">★★★★★</div>
+        <div class="rating-count">Nota perfeita no Google</div>
+        <div class="rating-count">Todos os clientes satisfeitos</div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-quote">"</div>
+      <p class="review-text">Pensa no cara chato sou eu... e mesmo assim me conquistou! Primeira vez que saio 100% satisfeito de uma barbearia. Atendimento nota 10, ambiente impecável e o corte ficou exatamente do jeito que eu queria.</p>
+      <div class="review-footer">
+        <div class="review-avatar">M</div>
+        <div>
+          <div class="review-name">Marcos Oliveira</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-quote">"</div>
+      <p class="review-text">Corte sempre perfeito e atendimento impecável. O Rafael tem uma habilidade rara de entender exatamente o que você quer, mesmo quando você não sabe descrever direito. Recomendo sem hesitar!</p>
+      <div class="review-footer">
+        <div class="review-avatar">L</div>
+        <div>
+          <div class="review-name">Lucas Ferreira</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-2">
+      <div class="review-quote">"</div>
+      <p class="review-text">Talento absurdo com tesoura e navalha. Fui indicado por um amigo e agora indico para todo mundo. Ambiente super agradável, serviço de altíssimo nível. Não troco mais de barbearia!</p>
+      <div class="review-footer">
+        <div class="review-avatar">P</div>
+        <div>
+          <div class="review-name">Pedro Souza</div>
+          <div class="review-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- GALERIA -->
+<section id="galeria" class="section-pad">
+  <div class="section-label reveal">Nosso trabalho</div>
+  <h2 class="section-title reveal reveal-delay-1">Cada corte,<br>uma <em>obra de arte.</em></h2>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal">
+      <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&q=80');"></div>
+      <div class="gallery-overlay"></div>
+      <div class="gallery-label">Corte + Degradê</div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-1">
+      <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80');"></div>
+      <div class="gallery-overlay"></div>
+      <div class="gallery-label">Barba Perfeita</div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-2">
+      <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80');"></div>
+      <div class="gallery-overlay"></div>
+      <div class="gallery-label">Ambiente Premium</div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-3">
+      <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=900&q=80');"></div>
+      <div class="gallery-overlay"></div>
+      <div class="gallery-label">Estilo Social</div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-2">
+      <div class="gallery-bg" style="background-image: url('https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?w=600&q=80');"></div>
+      <div class="gallery-overlay"></div>
+      <div class="gallery-label">Fade Limpo</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- LOCALIZAÇÃO -->
+<section id="localizacao" class="section-pad">
+  <div class="location-grid">
+    <div class="location-info">
+      <div class="section-label reveal">Onde nos encontrar</div>
+      <h2 class="section-title reveal reveal-delay-1">Venha nos <em>visitar.</em></h2>
+      <div style="margin-top: 3rem;">
+        <div class="info-item reveal reveal-delay-1">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Endereço</div>
+            <div class="info-value">Seu endereço completo aqui<br>Belo Horizonte, MG</div>
+          </div>
+        </div>
+        <div class="info-item reveal reveal-delay-2">
+          <div class="info-icon">🕐</div>
+          <div>
+            <div class="info-label">Horário de Funcionamento</div>
+            <div class="info-value">Segunda a Sábado</div>
+            <div class="info-sub">Das 9h às 20h · Atendimento com hora marcada</div>
+          </div>
+        </div>
+        <div class="info-item reveal reveal-delay-3">
+          <div class="info-icon">📱</div>
+          <div>
+            <div class="info-label">WhatsApp</div>
+            <div class="info-value">(31) 9 9999-9999</div>
+            <div class="info-sub">Agendamento rápido pelo WhatsApp</div>
+          </div>
+        </div>
+        <div class="info-item reveal reveal-delay-4">
+          <div class="info-icon">★</div>
+          <div>
+            <div class="info-label">Avaliação Google</div>
+            <div class="info-value" style="color: var(--gold);">★★★★★ 5.0 / 5.0</div>
+            <div class="info-sub">Nota perfeita — clientes sempre satisfeitos</div>
+          </div>
+        </div>
+      </div>
+      <a href="https://wa.me/5531999999999" class="btn-primary" style="margin-top: 1rem; display: inline-flex; text-decoration: none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+    <div class="map-container reveal reveal-delay-2">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.0!2d-43.9!3d-19.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU0JzAwLjAiUyA0M8KwNTQnMDAuMCJX!5e0!3m2!1spt!2sbr!4v1700000000000!5m2!1spt!2sbr"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="cta-bg"></div>
+  <div class="cta-lines"></div>
+  <h2 class="cta-title reveal">Seu visual fala<br><em>antes de você.</em></h2>
+  <p class="cta-sub reveal reveal-delay-1">Agende agora e venha descobrir o que um corte de verdade pode fazer por você.</p>
+  <a href="https://wa.me/5531999999999" class="btn-cta-big reveal reveal-delay-2">
+    Agendar agora
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">BARBEARIA <span> NOME</span></div>
+  <div class="footer-copy">© 2027 Barbearia X · Todos os direitos reservados</div>
+  <div class="footer-socials">
+    <a href="#" title="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a href="#" title="WhatsApp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5531999999999" class="whatsapp-float" title="Falar no WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // LOADER
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loader').classList.add('hidden');
+    }, 2200);
+  });
+
+  // CUSTOM CURSOR
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let ringX = 0, ringY = 0;
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    setTimeout(() => {
+      ring.style.left = e.clientX + 'px';
+      ring.style.top = e.clientY + 'px';
+    }, 80);
+  });
+  document.querySelectorAll('a, button, .service-card, .gallery-item, .pillar').forEach(el => {
+    el.addEventListener('mouseenter', () => { cursor.classList.add('hovered'); ring.classList.add('hovered'); });
+    el.addEventListener('mouseleave', () => { cursor.classList.remove('hovered'); ring.classList.remove('hovered'); });
+  });
+
+  // NAV SCROLL
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // REVEAL ON SCROLL
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // MOBILE MENU
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.add('open');
+  });
+  document.getElementById('mobileClose').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.remove('open');
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  });
+
+  // PARALLAX HERO BG
+  window.addEventListener('scroll', () => {
+    const hero = document.getElementById('hero');
+    const bg = hero.querySelector('.hero-bg');
+    const scrolled = window.scrollY;
+    if (scrolled < window.innerHeight) {
+      bg.style.transform = `scale(1.05) translateY(${scrolled * 0.3}px)`;
+    }
+  });
+</script>
+</body>
+</html>
